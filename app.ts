@@ -27,6 +27,9 @@ const person = {
 // person.role = [1, "hello", "bye"];
 // person.role.push("admin");
 
+let favoriteActivities: string[];
+favoriteActivities = ["basketball"];
+
 console.log(person.role);
 
 for (const hobby of person.hobbies) {
