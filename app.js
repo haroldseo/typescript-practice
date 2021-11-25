@@ -21,3 +21,7 @@ var combineNumberToString = combine(40, 80, "as-string");
 console.log(combineNumberToString);
 var combinedNames = combine("Joe", "Anna", "as-string");
 console.log(combinedNames);
+function print(text, alignment) {
+    console.log(text);
+}
+print("hello", "left");

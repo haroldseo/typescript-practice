@@ -24,3 +24,9 @@ console.log(combineNumberToString);
 
 const combinedNames = combine("Joe", "Anna", "as-string");
 console.log(combinedNames);
+
+function print(text: string, alignment: "left" | "right" | "center") {
+  console.log(text);
+}
+
+print("hello", "left");
