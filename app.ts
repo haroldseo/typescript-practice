@@ -1,35 +1,12 @@
-type Sum = number | string;
-type ConversionDescription = "as-number" | "as-string";
-
-function combine(input1: Sum, input2: Sum, resultType: ConversionDescription) {
-  let result;
-  if (resultType === "as-number") {
-    result = +input1 + +input2;
-  } else {
-    result = input1.toString() + input2.toString();
-  }
-  return result;
-  //   if (resultType === "as-number") {
-  //     return +result;
-  //   } else {
-  //     return result.toString();
-  //   }
+//The return type is inferred to have a type of number
+function add(n1: number, n2: number) {
+  return n1 + n2;
 }
 
-const combinedAges = combine(20, 30, "as-number");
-console.log(combinedAges);
-
-const combineStringToNumber = combine("10", "20", "as-number");
-console.log(combineStringToNumber);
-
-const combineNumberToString = combine(40, 80, "as-string");
-console.log(combineNumberToString);
-
-const combinedNames = combine("Joe", "Anna", "as-string");
-console.log(combinedNames);
-
-function print(text: string, alignment: "left" | "right" | "center") {
-  console.log(text);
+//When there is no return statement
+//The return type has an inferred type of void
+function printResult(num: number) {
+  console.log("Result: " + num);
 }
 
-print("hello", "left");
+printResult(add(5, 12));
