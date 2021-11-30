@@ -1,4 +1,7 @@
-function combine(input1: number | string, input2: number | string, resultType: "as-number" | "as-string") {
+type Sum = number | string;
+type ConversionDescription = "as-number" | "as-string";
+
+function combine(input1: Sum, input2: Sum, resultType: ConversionDescription) {
   let result;
   if (resultType === "as-number") {
     result = +input1 + +input2;
