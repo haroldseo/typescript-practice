@@ -13,3 +13,11 @@ var combineValues;
 combineValues = add;
 //combineValues = printResult; Error
 console.log(combineValues(8, 8));
+//Function Types and Callbacks
+function addAndHandle(n1, n2, cb) {
+    var result = n1 + n2;
+    cb(result);
+}
+addAndHandle(10, 20, function (result) {
+    console.log(result);
+});
