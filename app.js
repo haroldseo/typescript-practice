@@ -10,5 +10,6 @@ if (typeof userInput === "string") {
 //Never Type
 function generateError(message, code) {
     throw { message: message, errorCode: code };
+    //Another example: infinite loop
 }
 generateError("Error occurred", 404);
