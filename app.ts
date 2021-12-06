@@ -1,4 +1,4 @@
-//Unknow Type
+//Unknown Type
 let userInput: unknown;
 let userName: string;
 
