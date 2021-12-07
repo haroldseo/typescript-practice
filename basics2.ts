@@ -12,6 +12,7 @@
 //   role: [2, "author"],
 // };
 
+//Enum
 enum Role {
   ADMIN,
   READ_ONLY,
