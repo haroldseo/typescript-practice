@@ -1,5 +1,6 @@
 // Core Types: Object, Array, Tuples, Enum
 
+// Object
 // const person: {
 //   name: string;
 //   age: number;
@@ -11,6 +12,9 @@
 //   hobbies: ["sports", "photography"],
 //   role: [2, "author"],
 // };
+
+const videos: object[] = [{ title: "Number 1" }, { title: "Number 2" }];
+console.log(videos[0]);
 
 //Enum
 enum Role {
